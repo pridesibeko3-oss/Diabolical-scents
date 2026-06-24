@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 const products = [
-  { id: 'noir', name: 'Diabolical Noir', desc: 'An intoxicating blend of dark woods and amber.', img: '/image 1.jpg' },
-  { id: 'inferno', name: 'Diabolical Inferno', desc: 'A fiery heart of spice and smokey leather.', img: '/image 2.jpg' },
-  { id: 'eden', name: 'Diabolical Eden', desc: 'Forbidden florals wrapped in velvet musk.', img: '/image 3.jpg' }
+  { id: 'noir', name: 'Diabolical Noir', desc: 'An intoxicating blend of dark woods and amber.', img: '/images/bottle1.jpg' },
+  { id: 'inferno', name: 'Diabolical Inferno', desc: 'A fiery heart of spice and smokey leather.', img: '/images/bottle2.jpg' },
+  { id: 'eden', name: 'Diabolical Eden', desc: 'Forbidden florals wrapped in velvet musk.', img: '/images/bottle3.jpg' }
 ]
 
 export default function SignatureCollection(){
@@ -15,7 +15,7 @@ export default function SignatureCollection(){
           {products.map(p=> (
             <motion.div key={p.id} className="rounded-xl bg-[rgba(255,255,255,0.02)] p-6 border border-transparent hover:border-diagold hover:shadow-xl transition" whileHover={{ y: -6 }}>
               <div className="h-64 rounded-lg flex items-center justify-center overflow-hidden">
-                {/* Use images uploaded to repo root (names with spaces). */}
+                {/* Images moved to public/images/ and renamed to bottle1.jpg..bottle4.jpg */}
                 <img src={encodeURI(p.img)} alt={p.name} className="object-cover w-full h-full rounded-md" onError={(e)=>{ e.currentTarget.src='/images/placeholder-bottle.jpg' }} />
               </div>
               <h3 className="mt-6 text-xl font-semibold text-white">{p.name}</h3>
