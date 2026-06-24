@@ -1,21 +1,23 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}"
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        diablack: '#000000',
-        diagold: '#D4AF37',
-        diblood: '#8B0000'
+        diagreen: '#0B3D2E',
+        diagold: '#C9A76D',
+        diamoss: '#5B8A5A',
+        diaivory: '#F7F5F0',
+        diablack: '#050505'
       },
       fontFamily: {
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'ui-sans-serif', 'system-ui']
+        display: ['Playfair Display', 'serif'],
+        body: ['Cormorant Garamond', 'serif'],
+        script: ['Great Vibes', 'cursive']
+      },
+      backgroundImage: {
+        'paper-texture': "url('/images/paper-texture.jpg')"
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
