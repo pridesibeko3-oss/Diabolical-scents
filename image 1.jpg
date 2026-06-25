@@ -1,5 +1,0 @@
-REMOVED — moved to public/images/bottle1.jpg
-
-This file was removed from the repository root to keep the repository organized. The canonical images are now in public/images/ on the `organize-images` branch as `bottle1.jpg` through `bottle4.jpg`.
-
-If you need the original binary back, check the `main` branch history or the `organize-images` branch before this commit.
